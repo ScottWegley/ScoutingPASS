@@ -616,7 +616,7 @@ function qr_regenerate() {
 	// Get data
 	data = getData()
 
-  alert(getData());
+  console.log(getData());
 
   // Regenerate QR Code
 	qr.makeCode(data)
