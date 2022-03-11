@@ -1,6 +1,6 @@
 var config_data = `
 {
-  "title":"Scouting PASS 2022",
+  "title":"Arbor PASS 2022",
   "page_title":"Arbor PASS",
   "elements":{
     "prematch": {
