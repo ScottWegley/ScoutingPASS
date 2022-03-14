@@ -49,13 +49,13 @@ Sub saveData(inp As String)
     mapper.Add "t", "teamNumber"
 
     ' Additional custom mapping
-    'mapper.Add "f", "fouls"
-    'mapper.Add "c", "climb"
-    'mapper.Add "dr", "defenseRating"
-    'mapper.Add "d", "died"
-    'mapper.Add "to", "tippedOver"
-    'mapper.Add "cf", "cardFouls"
-    'mapper.Add "co", "comments"
+    mapper.Add "f", "fouls"
+    mapper.Add "c", "climb"
+    mapper.Add "dr", "defenseRating"
+    mapper.Add "d", "died"
+    mapper.Add "to", "tippedOver"
+    mapper.Add "cf", "cardFouls"
+    mapper.Add "co", "comments"
     
     If inp = "" Then
         Exit Sub
