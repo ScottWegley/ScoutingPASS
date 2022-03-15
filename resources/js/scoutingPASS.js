@@ -6,6 +6,9 @@
 document.addEventListener("touchstart", startTouch, false);
 document.addEventListener("touchend", moveTouch, false);
 
+var responseHashes= [];
+var counter = -1;
+
 // Swipe Up / Down / Left / Right
 var initialX = null;
 var xThreshold = 0.3;
