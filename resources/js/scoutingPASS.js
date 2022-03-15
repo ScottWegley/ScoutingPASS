@@ -1,4 +1,3 @@
-export { getData }
 // ScoutingPASS.js
 //
 // The guts of the ScountingPASS application
@@ -907,6 +906,10 @@ function undo(event)
    changingInput.value = JSON.stringify(tempValue);
    drawFields();
 }		
+
+function testWebsocket() {
+  console.log(getData());
+}
 
 window.onload = function(){
   var ret = configure();
