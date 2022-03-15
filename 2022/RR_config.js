@@ -1,7 +1,7 @@
 var config_data = `
 {
-  "title":"Arbor PASS 2022",
-  "page_title":"Arbor PASS",
+  "title":"Arbor PASS 2022 yo test ",
+  "page_title":"Arbor PASS yo test",
   "elements":{
     "prematch": {
       "Scouter Initials": {
