@@ -1,3 +1,4 @@
+export { getData }
 // ScoutingPASS.js
 //
 // The guts of the ScountingPASS application
@@ -920,5 +921,3 @@ window.onload = function(){
     this.drawFields();
   }
 };
-
-export { getData }
