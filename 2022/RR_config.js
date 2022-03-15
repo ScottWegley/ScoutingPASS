@@ -1,7 +1,7 @@
 var config_data = `
 {
-  "title":"Arbor PASS 2022 yo test ",
-  "page_title":"Arbor PASS yo test",
+  "title":"Scouting PASS 2022",
+  "page_title":"Rapid React",
   "elements":{
     "prematch": {
       "Scouter Initials": {
@@ -14,7 +14,7 @@ var config_data = `
       "Event":{
         "code":"e",
         "type":"event",
-        "defaultValue":"2022cafr",
+        "defaultValue":"2022flwp",
         "required":"true",
         "disabled":"true"
       },
