@@ -869,20 +869,40 @@ function undo(event) {
 function testWebsocket() {
   console.log(getData());
   document.getElementsByClassName("testWebsocket")[0].disabled = true;
-  updateHashes();
+  if(updateHashes() == true){
+    sendToDiscord();
+  }
 }
 
-function updateHashes(){
+function sendToDiscord() {
+  let rawData = getData();
+  let url = "https://discord.com/api/webhooks/953065340139610152/8-wKzqY67F6_alEBckHtEdM5lLX5N5q263b8lmUClV1Epv22XlYS3YcPo40A2Hh2TETX"
+  let request = new XMLHttpRequest();
+  request.open("POST", url);
+
+  request.setRequestHeader('Content-Type', 'application/json');
+
+  let params = {
+    content: rawData
+  };
+
+  request.send(JSON.stringify(params));
+}
+
+function updateHashes() {
+  let rtrn = false;
   let newHash = generateHash(getData());
-  if(responseHashes.includes(newHash)){
+  if (responseHashes.includes(newHash)) {
     console.log("Identical Hash: " + newHash);
     alert("You've already scouted this team for this match");
   } else {
     console.log("New Hash: " + newHash);
     submissionCounter += 1;
     responseHashes[submissionCounter] = generateHash(getData());
+    rtrn = true;
   }
   console.log(responseHashes);
+  return rtrn;
 }
 
 function generateHash(input) {
