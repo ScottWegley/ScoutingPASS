@@ -622,14 +622,13 @@ function qr_regenerate() {
   console.log(getData());
 
   // Regenerate QR Code
-	qr.makeCode(data)
 
 	updateQRHeader()
 	return true
 }
 
 function qr_clear() {
-    qr.clear()
+    
 }
 
 function clearForm() {
