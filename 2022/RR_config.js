@@ -1,7 +1,7 @@
 var config_data = `
 {
   "title":"Arbor Scouting 2022",
-  "page_title":"Arbor Scouting",
+  "page_title":"Arbor Scouting 2022",
   "elements":{
     "prematch": {
       "Scouter Initials": {
