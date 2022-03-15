@@ -4,11 +4,11 @@ var config_data = `
   "page_title":"Arbor Scouting",
   "elements":{
     "prematch": {
-      "Scouter Initials": {
+      "Scouter Name": {
         "code":"s",
         "type":"scouter",
-        "size":5,
-        "maxSize":5,
+        "size":12,
+        "maxSize":12,
         "required":"true"
       },
       "Event":{
