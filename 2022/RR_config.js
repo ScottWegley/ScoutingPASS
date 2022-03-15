@@ -102,10 +102,16 @@ var config_data = `
         "title": "Was Defended",
         "type":"bool"
       },
-      "Wallbot?": {
-        "code":"wbt",
-        "title": "Wallbot?",
-        "type":"bool"
+      "Shooter": {
+        "code":"sh",
+        "title":"Shooter Type",
+        "type":"radio",
+        "choices":{
+          "t":"Turret<br>",
+          "f":"Fixed<br>",
+          "o":"Other"
+        },
+        "defaultValue":"o"
       },
       "Cargo Intake From": {
         "code":"cif",
