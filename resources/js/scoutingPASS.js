@@ -907,6 +907,10 @@ function undo(event)
 
 window.onload = function(){
   var ret = configure();
+  document.querySelector('form').addEventListener('submit', event => {
+    event.preventDefault();
+    console.log('Form Submission Prevented');
+  });
   if (ret != -1) {
     var ec = document.getElementById("input_e").value;
     getTeams(ec);
