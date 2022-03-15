@@ -869,10 +869,10 @@ function undo(event) {
 function testWebsocket() {
   console.log(getData());
   document.getElementsByClassName("testWebsocket")[0].disabled = true;
-  updateHases();
+  updateHashes();
 }
 
-function updateHases(){
+function updateHashes(){
   let newHash = generateHash(getData());
   if(responseHashes.includes(newHash)){
     console.log("Identical Hash: " + newHash);
