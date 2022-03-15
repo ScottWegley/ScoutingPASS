@@ -920,3 +920,5 @@ window.onload = function(){
     this.drawFields();
   }
 };
+
+export { getData }
