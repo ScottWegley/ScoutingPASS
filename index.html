@@ -14,6 +14,9 @@
 		function retB(b){
 			return b;
 		}
+		function webhookButtonClicked(){
+			document.getElementById("testWebhook").disabled = true;
+		}
 	</script>
 </head>
 
@@ -113,7 +116,7 @@
 				<div id="clearButton">
 					<button type="button" class="clearForm" onclick="clearForm()">Clear Form</button>
 				</div>
-				<button type="button" class="testWebhook" enabled="true">Test the Webhook</button>
+				<button type="button" id="testWebhook" enabled="true">Test the Webhook</button>
 				<br>
 			</div>
 		</div>
