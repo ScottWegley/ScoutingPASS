@@ -59,7 +59,7 @@ var config_data = `
       },
       "Auto Start Position": {
         "code":"as",
-        "title": "Auto Start Position",
+        "title":"Auto Start Position",
         "type":"field_image",
         "filename":"2022/field_image.png"
       }
@@ -67,39 +67,39 @@ var config_data = `
     "auton": {
       "Taxi": {
         "code":"at",
-        "title": "Taxied?",
+        "title":"Taxied?",
         "type":"bool"
       },
       "Upper Cargo Scored": {
         "code":"au",
-        "title": "Uppoer Cargo Scored",
+        "title":"Uppoer Cargo Scored",
         "type":"counter"
       },
       "Lower Cargo Scored": {
         "code":"al",
-        "title": "Lower Cargo Scored",
+        "title":"Lower Cargo Scored",
         "type":"counter"
       },
       "Auto Aquired Cargo": {
         "code":"ac",
-        "title": "Picked up more cargo?",
+        "title":"Picked up more cargo?",
         "type":"bool"
       }
     },
     "teleop": {
       "Upper Cargo Scored": {
         "code":"tu",
-        "title": "Uppoer Cargo Scored",
+        "title":"Uppoer Cargo Scored",
         "type":"counter"
       },
       "Lower Cargo Scored": {
         "code":"tl",
-        "title": "Lower Cargo Scored",
+        "title":"Lower Cargo Scored",
         "type":"counter"
       },
       "Was Defended": {
         "code":"wd",
-        "title": "Was Defended",
+        "title":"Was Defended",
         "type":"bool"
       },
       "Shooter": {
@@ -107,15 +107,17 @@ var config_data = `
         "title":"Shooter Type",
         "type":"radio",
         "choices":{
-          "t":"Turret<br>",
-          "f":"Fixed<br>",
+          "th":"Turret (High)<br>",
+          "tl":"Turret (Low)<br>",
+          "fh":"Fixed (High)<br>",
+          "fl":"Fixed (Low)<br>",
           "o":"Other"
         },
         "defaultValue":"o"
       },
       "Cargo Intake From": {
         "code":"cif",
-        "title": "Cargo Intake From",
+        "title":"Cargo Intake From",
         "type":"radio",
         "choices":{
           "t":"Terminal<br>",
@@ -127,7 +129,7 @@ var config_data = `
       },
       "Shooting Spot": {
         "code":"ss",
-        "title": "Shooting Spot",
+        "title":"Shooting Spot",
         "type":"field_image",
         "filename":"2022/field_image.png"
       }
@@ -135,7 +137,7 @@ var config_data = `
     "endgame": {
       "Climb": {
         "code":"c",
-        "title": "Climb",
+        "title":"Climb",
         "type":"radio",
         "choices":{
           "1":"Low<br>",
@@ -149,7 +151,7 @@ var config_data = `
       },
       "If climb failed,<br>Last successful rung,<br>if any": {
         "code":"lsr",
-        "title": "If climb failed,<br>last successful rung,<br>if any",
+        "title":"If climb failed,<br>last successful rung,<br>if any",
         "type":"radio",
         "choices":{
           "1":"Low<br>",
@@ -163,12 +165,12 @@ var config_data = `
       },
       "Started Climb before Endgame": {
         "code":"be",
-        "title": "Started climb before EndGame",
+        "title":"Started climb before EndGame",
         "type":"bool"
       },
       "Num of Robots Climbed": {
         "code":"cn",
-        "title": "# of alliance bots climbed",
+        "title":"# of alliance bots climbed",
         "type":"counter"
       }
     },
@@ -187,7 +189,7 @@ var config_data = `
       },
       "Defense Rating": {
         "code":"dr",
-        "title": "Defense Rating",
+        "title":"Defense Rating",
         "type":"radio",
         "choices":{
           "n":"Not Effective<br>",
@@ -199,34 +201,34 @@ var config_data = `
       },
       "Shot enemy balls away?": {
         "code":"ba",
-        "title": "Shot enemy balls away?",
+        "title":"Shot enemy balls away?",
         "type":"bool"
       },
       "Died/Tipped": {
         "code":"d",
-        "title": "Died/Tipped",
+        "title":"Died/Tipped",
         "type":"bool"
       },
       "Card Foul": {
         "code":"cf",
-        "title": "Yellow/Red Card",
+        "title":"Yellow/Red Card",
         "type":"bool"
       },
       "Make good alliance partner?": {
         "code":"all",
-        "title": "Make good alliance partner?",
+        "title":"Make good alliance partner?",
         "type":"bool"
       },
       "Comments": {
         "code":"co",
-        "title": "Comments",
+        "title":"Comments",
         "type":"text",
         "size":15,
         "maxSize":50
       },
       "Confidence Rating": {
         "code":"cnf",
-        "title": "Confidence Rating",
+        "title":"Confidence Rating",
         "type":"radio",
         "choices":{
           "v":"Very Confident<br>",
