@@ -848,7 +848,7 @@ function testWebsocket() {
   console.log(getData());
   document.getElementsByClassName("testWebsocket")[0].disabled = true;
   if (updateHashes() == true) {
-    
+    sendToDiscord();
   }
 }
 
