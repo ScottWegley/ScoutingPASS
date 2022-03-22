@@ -848,7 +848,7 @@ function testWebsocket() {
   console.log(getData());
   document.getElementsByClassName("testWebsocket")[0].disabled = true;
   if (updateHashes() == true) {
-    sendToSheets();
+    
   }
 }
 
@@ -865,24 +865,6 @@ function sendToDiscord() {
   };
 
   request.send(JSON.stringify(params));
-}
-
-function sendToSheets() {
-  var data = "{\"data\": \"thisTheShit\"}";
-
-  var xhr = new XMLHttpRequest();
-  xhr.withCredentials = true;
-
-  xhr.addEventListener("readystatechange", function () {
-    if (this.readyState === 4) {
-      console.log(this.responseText);
-    }
-  });
-
-  xhr.open("POST", "https://script.google.com/macros/s/AKfycbxDUtSnDmQ46pOV-Z_D0QnVtbljFngMrprT9LlZsd4rhrGWi0WlT-tUJokBeBrd2xLC7g/exec");
-  xhr.setRequestHeader("Content-Type", "text/plain");
-
-  xhr.send(data);
 }
 
 function updateHashes() {
