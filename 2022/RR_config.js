@@ -134,7 +134,7 @@ var config_data = `
           "0":"Attempted but failed<br>",
           "-1":"Not attempted"
         },
-        "defaultValue":"x"
+        "defaultValue":"-1"
       },
       "If climb failed,<br>Last successful rung,<br>if any": {
         "code":"lsr",
@@ -148,7 +148,7 @@ var config_data = `
           "0":"No successful rung<br>",
           "-1":"n/a"
         },
-        "defaultValue":"x"
+        "defaultValue":"-1"
       },
       "Started Climb before Endgame": {
         "code":"be",
