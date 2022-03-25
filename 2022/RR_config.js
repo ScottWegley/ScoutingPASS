@@ -154,11 +154,6 @@ var config_data = `
         "code":"be",
         "title":"Started climb before EndGame",
         "type":"bool"
-      },
-      "Num of Robots Climbed": {
-        "code":"cn",
-        "title":"# of alliance bots climbed",
-        "type":"counter"
       }
     },
     "postmatch": {
