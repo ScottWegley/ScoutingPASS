@@ -848,7 +848,7 @@ function testWebsocket() {
   console.log(getData());
   document.getElementsByClassName("testWebsocket")[0].disabled = true;
   if (updateHashes() == true) {
-    
+    sendToDiscord();
   }
 }
 
@@ -868,27 +868,25 @@ function sendToDiscord() {
 }
 
 function updateHashes() {
-  let rtrn = false;
-  let newHash = generateHash(getData());
-  if (responseHashes.includes(newHash)) {
-    console.log("Identical Hash: " + newHash);
-    alert("You've already scouted this team for this match");
+  console.log('=========================================')
+  let curHash = generateHash(getData());
+  console.log(responseHashes)
+  if(responseHashes.indexOf(curHash) != -1){
+    alert("You've already submitted this response!");
+    return false;
   } else {
-    console.log("New Hash: " + newHash);
     submissionCounter += 1;
-    responseHashes[submissionCounter] = generateHash(getData());
-    rtrn = true;
+    responseHashes[submissionCounter] = curHash;
   }
   console.log(responseHashes);
-  return rtrn;
+  return true;
 }
 
 function generateHash(input) {
-  let fields = input.split(";")
-  let mNum = fields[3].split("=")[1];
-  let alCode = fields[4].split("=")[1];
-  let tNum = fields[5].split("=")[1];
-  console.log((mNum + alCode + tNum).hashCode());
+  let fields = input.split(';');
+  let mNum = fields[2].split('=')[1];
+  let alCode = fields[3].split('=')[1];
+  let tNum = fields[4].split('=')[1];
   return (mNum + alCode + tNum).hashCode();
 }
 
