@@ -131,8 +131,8 @@ var config_data = `
           "2":"Mid<br>",
           "3":"High<br>",
           "4":"Traversal<br>",
-          "a":"Attempted but failed<br>",
-          "x":"Not attempted"
+          "0":"Attempted but failed<br>",
+          "-1":"Not attempted"
         },
         "defaultValue":"x"
       },
@@ -145,8 +145,8 @@ var config_data = `
           "2":"Mid<br>",
           "3":"High<br>",
           "4":"Traversal<br>",
-          "n":"No successful rung<br>",
-          "x":"n/a"
+          "0":"No successful rung<br>",
+          "-1":"n/a"
         },
         "defaultValue":"x"
       },
