@@ -181,9 +181,9 @@ var config_data = `
         },
         "defaultValue":"x"
       },
-      "Shot enemy balls away?": {
-        "code":"ba",
-        "title":"Shot enemy balls away?",
+      "Limelight?": {
+        "code":"ll",
+        "title":"Do they have limelight?",
         "type":"bool"
       },
       "Died/Tipped": {
